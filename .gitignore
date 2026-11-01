@@ -5,8 +5,9 @@ __pycache__/
 *.so
 .Python
 venv/
-env/
 .env
+.env.*
+!.env.example
 *.egg-info/
 dist/
 build/
@@ -14,12 +15,11 @@ build/
 # Jupyter
 .ipynb_checkpoints/
 
-# Data
-data/raw/*.xlsx
-data/raw/*.csv
+# Data (do not commit datasets or processed files)
+data/raw/*
 data/processed/*
-!data/processed/.gitkeep
 !data/raw/.gitkeep
+!data/processed/.gitkeep
 
 # IDE
 .vscode/
